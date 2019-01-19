@@ -1,8 +1,9 @@
-$primary-color: #800;
+$primary-color: rgba(153, 0, 0, 0.9);
 $secondary-color: #ff3;
 $highlight: #fff;
 
 body {
-  background: $primary-color;
+  background-color: $primary-color;
+  background-image: url("../img/bg.jpg");
   color: $highlight;
 }
