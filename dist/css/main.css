@@ -89,6 +89,47 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      font-size: 3.5rem;
+      line-height: 1;
+      margin-bottom: 1rem; }
+    main .sm-heading {
+      font-size: 2.5rem;
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+    ul.menu-nav .portrait,
+    div.menu-branding .portrait {
+      width: 125px;
+      height: 125px; }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(-100%, 0, 0); } }
+
+@media screen and (max-width: 500px) {
+  main .lg-heading {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 1rem; }
+  main .sm-heading {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 1rem; } }
+
 * {
   box-sizing: border-box; }
 
@@ -121,7 +162,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 4rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
