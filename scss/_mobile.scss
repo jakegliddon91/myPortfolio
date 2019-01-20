@@ -1,9 +1,15 @@
 // Widescreens
 @include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // Desktop
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Tablets
@@ -54,6 +60,10 @@
   .about-info {
     display: block;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // Mobiles
@@ -70,5 +80,8 @@
       line-height: 1;
       margin-bottom: 1rem;
     }
+  }
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
